@@ -4,9 +4,9 @@ const tweetStatus = (twitterClient, status) => {
   twitterClient.tweets.statusesUpdate({
     status: status
   }).then (response => {
-    console.log('Tweeted!', response)
+    console.log('[Success]', response)
   }).catch(error => {
-    console.error(error)
+    console.error('[Error]', error)
   })
 }
 
